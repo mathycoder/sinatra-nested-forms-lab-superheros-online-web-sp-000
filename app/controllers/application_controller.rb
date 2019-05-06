@@ -10,8 +10,8 @@ class App < Sinatra::Base
   
   post '/teams' do 
     @team = Team.new(params["team"])
-    binding.pry     
     params["team"]["members"].each do |attributes|
+      binding.pry  
       Hero.new(attributes)
     end 
     
