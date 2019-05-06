@@ -14,7 +14,7 @@ class App < Sinatra::Base
       Hero.new(attributes)
     end 
     
-
+      binding.pry  
     
     erb :team 
   end 
